@@ -1,0 +1,91 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="webtolead.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body id="CustomerForm">
+    <div class="container">
+        <div class="main-div">
+            <div class="panel">
+                <img src="UB.png" alt="" width="100px" height="50px" style="float: left; ">
+                <h2>UNIVERSAL BUILDERS<span><p>Real Estate Company</p></span></h2>
+           </div>
+            <form id="Login" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <div class="form-group">
+                <input type=hidden name="oid" value="00D0w0000000MQj">
+                </div>
+                <div class="form-group">
+                    <input type=hidden name="retURL" value="http://www.salesforce.com">
+                </div>  
+                <div class="form-group">
+                    <input  id="first_name" class="form-control"  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Enter First Name" />
+                </div>
+                <div class="form-group">
+                    <input  id="last_name" class="form-control" id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Enter Last Name" />
+                </div>
+                <div class="form-group">
+                   <input  id="email" class="form-control" maxlength="80" name="email" size="20" type="text" placeholder="Enter Email"/>
+                </div>
+                <div class="form-group">
+                    <input  id="company" class="form-control" maxlength="40" name="company" size="20" type="text" placeholder="Enter Company"/>
+                </div>
+                <!-- <div class="form-group">
+                    <input  id="city" class="form-control" maxlength="40" name="city" size="20" type="text" placeholder="Enter City"/>
+                </div>
+                <div class="form-group">
+                    <input  id="state" class="form-control" maxlength="20" name="state" size="20" type="text" placeholder="State"/>
+                </div> -->
+                <div class="form-group">
+                    <select  id="Campaign_ID" class="form-control" name="Campaign_ID">
+                        <option value="">Select Campaign</option>
+                        <option value="7010w0000007dMz">Phoenix Villa Campaign</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select multiple id="00N0w000006VMBI" class="prefer form-control" name="00N0w000006VMBI"> 
+                        <option value="">Select Preferences</option>                    
+                        <option value="Park">Park</option>
+                        <option value="Swimming Pools">Swimming Pools</option>
+                        <option value="Lift">Lift</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <select  id="00N0w000006VMkN" class="form-control" name="00N0w000006VMkN" title="Preferred Location">
+                        <option value="">Select Location</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Kochi">Kochi</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Chennai">Chennai</option>
+                        </select>
+                </div>
+                
+                <div class="form-group">
+                    <input  id="00N0w000006VMkI" class="form-control" name="00N0w000006VMkI" size="20" type="text" placeholder="Enter Budget"//>
+                </div>
+
+                <div class="form-group">
+                    <span class="dateInput dateOnlyInput"><input  id="00N0w000006VMou" class="form-control" name="00N0w000006VMou" placeholder="Enter Expected Date" size="12" type="date" /></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+        
+            </form>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+    
